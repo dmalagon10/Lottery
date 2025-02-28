@@ -1,0 +1,94 @@
+html{
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden; /* Prevents scrollbars */
+}
+
+.background-roller {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Background Image */
+    background: rgb(255, 215, 0, 0.7) url("../img/bills.png") repeat;
+    background-blend-mode: multiply;
+    background-size: 50% 70%;
+    animation: rollingBg 10s linear infinite;
+  }
+  
+@keyframes rollingBg {
+    from { background-position: 50% 0; }
+    to { background-position: -50% 0; }
+}
+
+.container{
+    margin:50px auto;
+    width: 400px;
+    padding:30px;
+    background: #FFF6E0;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+.container h1{
+    margin: 0 0 30px;
+    padding:0;
+    font-size: 40px;
+    color: #1B1F3B;
+    text-align: center;
+    font-family: "Bangers", serif;
+}
+.container .element label{
+    color: #1B1F3B;
+    font-family: "Candal", serif;
+    font-size: 20px;
+}
+.container .element input{
+    width:100%;
+    padding:10px 0;
+    color:#1B1F3B;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #1B1F3B;
+    margin-bottom: 30px;
+    font-family: "Candal", serif;
+    font-size: 16px;
+}
+
+.container .element input[type=submit]{
+    background-color: #FFC857;
+    border: none;
+    cursor:pointer;
+    padding: 15px;
+    margin-top:30px;
+    border-radius: 40px;
+    font-family: "Bangers", serif;
+    font-size: 26px;
+    font-weight: bold;
+    color: #1B1F3B;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+
+.container .element input[type=submit]:hover{
+   background-color: #E0A63F;
+}
+input::placeholder {
+    color: #1B1F3B;
+    opacity: .3; 
+}
+
+.container .element4{
+    color: #1B1F3B;
+    margin-top: 30px;
+    text-align: center;
+    font-family: "Bangers", serif;
+    font-size: 20px;
+}

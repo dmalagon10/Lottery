@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles1.css">
+    <link rel="stylesheet" href="css/styles0.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Candal&display=swap" rel="stylesheet">
+    <title>Place your bet</title>
+    <style>
+        .content{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-color: #FFF6E0;
+            min-height: 75vh;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Lottery.bet</h1>
+        <h3>Make your bet</h3>
+    </header>
+    <ul>
+        <li><a href="winningNums.html">See winning Numbers</a></li>
+        <li><a href="winners.html">See previous winner</a></li>
+        <li><a href="index.html">Todays prizes</a></li>
+    </ul>
+    <div class="content">
+        <div class="container" style="background: #FFF;box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);">
+            <h1>Place your bet</h1>
+            <form method="post">
+                
+                <div class="element">
+                    <label for="numbers">Selected Numbers</label>
+                    <input type="numbers" id="numbers" name="numbers" placeholder="Numbers"/><br/>
+                </div>
+
+                <div class="element">
+                    <input type="submit" value="submit"/>
+                </div>
+
+            </form>
+        </div>
+    </div>
+</body>
+</html>
